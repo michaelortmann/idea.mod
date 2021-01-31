@@ -1,0 +1,4 @@
+DESC:The idea module provides encryption support for eggdrop. You always
+DESC:need to load an encryption module to run eggdrop.
+DESC:
+DESC:ENABLE this module.

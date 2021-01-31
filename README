@@ -1,0 +1,75 @@
+Description:
+------------
+
+idea.mod is a replacement for the blowfish module that comes with Eggdrop.
+It uses MD5 hashing for password checking, and the IDEA block cipher in
+CFB mode for encrypting strings.
+
+As this module is new, there still may be some bugs. If you find one, please
+report it to paladin@techmonkeys.org.
+
+idea.mod-1.0.2-pseudo is for Eggdrop version 1.8.0 and greater. If you have an
+older Eggdrop, use the original 1.0.2 instead.
+
+NOTE:  You will need to start a new user file if you have been using
+       blowfish as your encryption module, as the two are not compatible.
+
+Installation:
+-------------
+
+This modificatio of idea.mod has only been tested with 1.8.0, and may or may not
+work with other versions.
+
+You need the eggdrop source to compile the module.
+
+The following instructions assume, ~/eggdrop1.8.X/ is the directory
+where the eggdrop source code is.
+
+Put idea.mod-1.0.2-pseudo.tar.gz in ~/eggdrop1.8.X/src/mod/,
+and unpack it (tar zxf idea.mod-1.0.2-pseudo.tar.gz).
+
+Now change back to ~/eggdrop1.8.X/ and compile your bot normally:
+
+./configure
+make
+make config (or iconfig)
+make install
+
+Usage:
+------
+
+idea.mod provides the same TCL commands as blowfish.mod:
+
+encpass <password>
+encrypt <key> <string>
+decrypt <key> <string>
+
+
+Known Problems:
+---------------
+
+None.
+
+Feedback:
+---------
+
+You can send any problems, feedback, or bug reports to:
+paladin@techmonkeys.org
+For problems with using this on 1.8.0, write to pseudo@egg6.net
+
+Original versions can be found at:
+http://paladin.techmonkeys.org/eggdrop/
+
+Pseudo's modification for the 1.8.x series is available at:
+http://eggdrop.egg6.net/modules/
+
+Thanks to:
+----------
+
+- Xuejia Lai and James L. Massey for developing IDEA.
+- Colin Plumb for writing the C implementation of IDEA that I used,
+  and placing it in the public domain.
+- Bruce Schneier for writing _Applied_Cryptography_ which inspired me
+  to write this module.
+- The eggdev team for writing and maintaining Eggdrop.
+
