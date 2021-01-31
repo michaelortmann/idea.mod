@@ -569,7 +569,7 @@ static void idea_encrypt_pass(char *text, char *new)
     int i, n;
     char *p;
     unsigned char digest[16];
-    u_32bit_t temp = 0;
+    uint32_t temp = 0;
     
     /* Generate 16 byte md5 sum from the pass */
     MD5_Init(&md5context);
@@ -600,7 +600,7 @@ static char *encrypt_string(char *key, char *str)
   MD5_CTX md5context;
   unsigned char digest[16];
   struct IdeaCfbContext context;
-  u_32bit_t temp = 0;
+  uint32_t temp = 0;
   /* Pad fake string with 8 bytes to make sure there's enough */
   s = (char *) nmalloc(strlen(str) + 9);
   strcpy(s, str);
@@ -647,7 +647,7 @@ static char *decrypt_string(char *key, char *str)
   MD5_CTX md5context;
   unsigned char digest[16];
   struct IdeaCfbContext context;
-  u_32bit_t temp = 0;
+  uint32_t temp = 0;
 
   /* Pad encoded string with 0 bits in case it's bogus */
   s = (char *) nmalloc(strlen(str) + 12);
