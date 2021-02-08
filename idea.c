@@ -87,7 +87,7 @@ static Function *global = NULL;
  *		so they do a great deal of masking.  -DIDEA32 uses "int"
  *		register variables and masks explicitly only where
  *		necessary.  On a SPARC, for example, this boosts
- *		performace by 30%.
+ *		performance by 30%.
  *
  *	The IDEA(tm) block cipher is covered by a patent held by ETH and a
  *	Swiss company called Ascom-Tech AG.  The Swiss patent number is
