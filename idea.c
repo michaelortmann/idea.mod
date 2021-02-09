@@ -24,10 +24,6 @@
 /*
  * This code was originally in the public domain.
  */
-/*
- * Modified to run on Eggdrop 1.8.x and fixed some compile warnings
- *                                     -- pseudo@egg6.net (Sep 2010)
- */
 
 #define MODULE_NAME "encryption"
 #define MAKING_ENCRYPTION
@@ -761,7 +757,7 @@ char *idea_start(Function *global_funcs)
     if (!module_rename("idea", MODULE_NAME))
       return "Already loaded.";
     /* Initialize buffered boxes */
-    module_register(MODULE_NAME, idea_table, 2, 1);
+    module_register(MODULE_NAME, idea_table, 2, 2);
     if (!module_depend(MODULE_NAME, "eggdrop", 108, 4)) {
       module_undepend(MODULE_NAME);
       return "This module requires Eggdrop 1.8.4 or later.";

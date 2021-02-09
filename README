@@ -8,7 +8,7 @@ CFB mode for encrypting strings.
 As this module is new, there still may be some bugs. If you find one, please
 report it to paladin@techmonkeys.org.
 
-idea.mod-1.0.2-pseudo is for Eggdrop version 1.8.0 and greater. If you have an
+idea.mod-1.1 is for Eggdrop version 1.8.4 and greater. If you have an
 older Eggdrop, use the original 1.0.2 instead.
 
 NOTE:  You will need to start a new user file if you have been using
@@ -17,18 +17,18 @@ NOTE:  You will need to start a new user file if you have been using
 Installation:
 -------------
 
-This modificatio of idea.mod has only been tested with 1.8.0, and may or may not
+This modificatio of idea.mod has only been tested with 1.8.4, and may or may not
 work with other versions.
 
 You need the eggdrop source to compile the module.
 
-The following instructions assume, ~/eggdrop1.8.X/ is the directory
+The following instructions assume, ~/eggdrop-1.8.x/ is the directory
 where the eggdrop source code is.
 
-Put idea.mod-1.0.2-pseudo.tar.gz in ~/eggdrop1.8.X/src/mod/,
-and unpack it (tar zxf idea.mod-1.0.2-pseudo.tar.gz).
+Put idea.mod-1.1.tar.gz in ~/eggdrop-1.8.x/src/mod/,
+and unpack it (tar zxf idea.mod-1.1.tar.gz).
 
-Now change back to ~/eggdrop1.8.X/ and compile your bot normally:
+Now change back to ~/eggdrop-1.8.x/ and compile your bot normally:
 
 ./configure
 make
@@ -55,10 +55,6 @@ Feedback:
 
 You can send any problems, feedback, or bug reports to:
 paladin@techmonkeys.org
-For problems with using this on 1.8.0, write to pseudo@egg6.net
-
-Original versions can be found at:
-http://paladin.techmonkeys.org/eggdrop/
 
 Pseudo's modification for the 1.8.x series is available at:
 http://eggdrop.egg6.net/modules/

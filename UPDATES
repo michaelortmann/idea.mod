@@ -1,0 +1,5 @@
+2.2
+- Now also works with eggdrop 1.8.4. (Michael Ortmann)
+1.0.2-pseudo
+- Fixed some compile warnings (pseudo)
+- Modified to run on eggdrop 1.8.x (pseudo)
