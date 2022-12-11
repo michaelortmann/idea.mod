@@ -1,4 +1,5 @@
 2.2
+- Fixed typos. (Michael Ortmann)
 - Now also works with eggdrop 1.8.4. (Michael Ortmann)
 1.0.2-pseudo
 - Fixed some compile warnings (pseudo)

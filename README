@@ -8,7 +8,7 @@ CFB mode for encrypting strings.
 As this module is new, there still may be some bugs. If you find one, please
 report it to paladin@techmonkeys.org.
 
-idea.mod-1.1 is for Eggdrop version 1.8.4 and greater. If you have an
+idea.mod-2.2 is for Eggdrop version 1.8.4 and greater. If you have an
 older Eggdrop, use the original 1.0.2 instead.
 
 NOTE:  You will need to start a new user file if you have been using
@@ -17,7 +17,7 @@ NOTE:  You will need to start a new user file if you have been using
 Installation:
 -------------
 
-This modificatio of idea.mod has only been tested with 1.8.4, and may or may not
+This modification of idea.mod has only been tested with 1.8.4, and may or may not
 work with other versions.
 
 You need the eggdrop source to compile the module.
@@ -25,8 +25,8 @@ You need the eggdrop source to compile the module.
 The following instructions assume, ~/eggdrop-1.8.x/ is the directory
 where the eggdrop source code is.
 
-Put idea.mod-1.1.tar.gz in ~/eggdrop-1.8.x/src/mod/,
-and unpack it (tar zxf idea.mod-1.1.tar.gz).
+Put idea.mod-2.2.tar.gz in ~/eggdrop-1.8.x/src/mod/,
+and unpack it (tar zxf idea.mod-2.2.tar.gz).
 
 Now change back to ~/eggdrop-1.8.x/ and compile your bot normally:
 
