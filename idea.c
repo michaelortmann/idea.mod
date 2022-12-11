@@ -130,9 +130,9 @@ typedef word16 uint16;
  */
 #ifdef SMALL_CACHE
 static uint16
-mul(register uint16 a, register uint16 b)
+mul(uint16 a, uint16 b)
 {
-	register word32 p;
+	word32 p;
 
 	p = (word32)a * b;
 	if (p) {
@@ -288,11 +288,11 @@ ideaInvertKey(word16 const *EK, word16 DK[IDEAKEYLEN])
 static void
 ideaCipher(byte const (inbuf[8]), byte (outbuf[8]), word16 const *key)
 {
-	register uint16 x1, x2, x3, x4, s2, s3;
+	uint16 x1, x2, x3, x4, s2, s3;
 	word16 *in, *out;
 #ifndef SMALL_CACHE
-	register uint16 t16;	/* Temporaries needed by MUL macro */
-	register word32 t32;
+	uint16 t16;	/* Temporaries needed by MUL macro */
+	word32 t32;
 #endif
 	int r = IDEAROUNDS;
 
@@ -757,7 +757,7 @@ char *idea_start(Function *global_funcs)
     if (!module_rename("idea", MODULE_NAME))
       return "Already loaded.";
     /* Initialize buffered boxes */
-    module_register(MODULE_NAME, idea_table, 2, 2);
+    module_register(MODULE_NAME, idea_table, 2, 3);
     if (!module_depend(MODULE_NAME, "eggdrop", 108, 4)) {
       module_undepend(MODULE_NAME);
       return "This module requires Eggdrop 1.8.4 or later.";
