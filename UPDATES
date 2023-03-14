@@ -1,6 +1,9 @@
+2.4
+- Cleanup alloc() (Michael Ortmann)
+- Fixed URL. (Michael Ortmann)
 2.3
 - Fixed typos. (Michael Ortmann)
-- Remove register keyword. (Michael Ortmann)
+- Removed register keyword. (Michael Ortmann)
 2.2
 - Now also works with eggdrop 1.8.4. (Michael Ortmann)
 1.0.2-pseudo

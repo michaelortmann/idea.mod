@@ -598,12 +598,12 @@ static char *encrypt_string(char *key, char *str)
   struct IdeaCfbContext context;
   uint32_t temp = 0;
   /* Pad fake string with 8 bytes to make sure there's enough */
-  s = (char *) nmalloc(strlen(str) + 9);
+  s = nmalloc(strlen(str) + 9);
   strcpy(s, str);
   if ((!key) || (!key[0]))
     return s;
   p = s;
-  dest = (char *) nmalloc((strlen(str) + 9) * 2);
+  dest = nmalloc((strlen(str) + 9) * 2);
   while (*p)
     p++;
   for (i = 0; i < 8; i++)
@@ -646,12 +646,12 @@ static char *decrypt_string(char *key, char *str)
   uint32_t temp = 0;
 
   /* Pad encoded string with 0 bits in case it's bogus */
-  s = (char *) nmalloc(strlen(str) + 12);
+  s = nmalloc(strlen(str) + 12);
   strcpy(s, str);
   if ((!key) || (!key[0]))
     return s;
   p = s;
-  dest = (char *) nmalloc(strlen(str) + 12);
+  dest = nmalloc(strlen(str) + 12);
   while (*p)
     p++;
   for (i = 0; i < 12; i++)
@@ -757,7 +757,7 @@ char *idea_start(Function *global_funcs)
     if (!module_rename("idea", MODULE_NAME))
       return "Already loaded.";
     /* Initialize buffered boxes */
-    module_register(MODULE_NAME, idea_table, 2, 3);
+    module_register(MODULE_NAME, idea_table, 2, 4);
     if (!module_depend(MODULE_NAME, "eggdrop", 108, 4)) {
       module_undepend(MODULE_NAME);
       return "This module requires Eggdrop 1.8.4 or later.";

@@ -8,7 +8,7 @@ CFB mode for encrypting strings.
 As this module is new, there still may be some bugs. If you find one, please
 report it to paladin@techmonkeys.org.
 
-idea.mod-2.3 is for Eggdrop version 1.8.4 and greater. If you have an
+idea.mod-2.4 is for Eggdrop version 1.8.4 and greater. If you have an
 older Eggdrop, use the original 1.0.2 instead.
 
 NOTE:  You will need to start a new user file if you have been using
@@ -22,13 +22,13 @@ work with other versions.
 
 You need the eggdrop source to compile the module.
 
-The following instructions assume, ~/eggdrop-1.8.x/ is the directory
+The following instructions assume, ~/eggdrop-1.9.5/ is the directory
 where the eggdrop source code is.
 
-Put idea.mod-2.3.tar.gz in ~/eggdrop-1.8.x/src/mod/,
-and unpack it (tar zxf idea.mod-2.3.tar.gz).
+Put idea.mod-2.4.tar.gz in ~/eggdrop-1.9.5/src/mod/,
+and unpack it (tar zxf idea.mod-2.4.tar.gz).
 
-Now change back to ~/eggdrop-1.8.x/ and compile your bot normally:
+Now change back to ~/eggdrop-1.9.5/ and compile your bot normally:
 
 ./configure
 make
@@ -56,8 +56,10 @@ Feedback:
 You can send any problems, feedback, or bug reports to:
 paladin@techmonkeys.org
 
-Pseudo's modification for the 1.8.x series is available at:
-http://eggdrop.egg6.net/modules/
+You can obtain the latest version from
+https://ftp.eggheads.org/pub/eggdrop/modules/ and
+https://github.com/michaelortmann/idea.mod
+
 
 Thanks to:
 ----------
